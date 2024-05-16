@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="BMIStyles.css">
+
+</head>
+<body>
+    <header class="Header">
+        <div class="HeaderTitle">
+            BMI Calculator
+        </div>
+    </header>
+    <body>
+        <div class="GenderSection">
+            <!-- <div id="Female" class="FemaleSection">
+                <div class="FemaleHeader">
+                    <h1>
+                        Female
+                    </h1>
+                </div>
+                <button id="Female"class="FemaleBtnContainer">
+                    <svg width="77" height="129" viewBox="0 0 77 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_4_20)">
+                        <rect x="34.973" y="68.4666" width="6.52063" height="52.165" fill="#F98FED"/>
+                        <rect width="68.4666" height="6.52063" transform="matrix(1 0 0 -1 4 97.8094)" fill="#F98FED"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M38.2333 68.4666C57.1398 68.4666 72.4666 53.1398 72.4666 34.2333C72.4666 15.3268 57.1398 0 38.2333 0C19.3268 0 4 15.3268 4 34.2333C4 53.1398 19.3268 68.4666 38.2333 68.4666ZM38.6408 61.0197C54.1712 61.0197 66.761 49.0022 66.761 34.1777C66.761 19.3533 54.1712 7.33572 38.6408 7.33572C23.1105 7.33572 10.5206 19.3533 10.5206 34.1777C10.5206 49.0022 23.1105 61.0197 38.6408 61.0197Z" fill="#F98FED"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_4_20" x="0" y="0" width="76.4666" height="128.632" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_20"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_20" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>                        
+                </button>
+            </div>  -->
+            <div id="MaleSection"class="GenderSection">
+                <div class="GenderHeader">
+                    <div class="FemaleHeader">
+                        <h1>
+                            Female
+                        </h1>
+                    </div>
+                    <div class="MaleHeader">
+                        <h1>
+                            Male
+                        </h1>
+                    </div>
+                </div>
+                <div class="Select-Gender">
+                    <div class="FemaleBtn">
+                        <input type="radio" id="FemaleGender" name="GenderBtn" value="Female">
+                        <label for="FemaleGender">
+                            <svg width="77" height="129" viewBox="0 0 77 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_4_20)">
+                            <rect x="34.973" y="68.4666" width="6.52063" height="52.165" fill="#F98FED"/>
+                            <rect width="68.4666" height="6.52063" transform="matrix(1 0 0 -1 4 97.8094)" fill="#F98FED"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.2333 68.4666C57.1398 68.4666 72.4666 53.1398 72.4666 34.2333C72.4666 15.3268 57.1398 0 38.2333 0C19.3268 0 4 15.3268 4 34.2333C4 53.1398 19.3268 68.4666 38.2333 68.4666ZM38.6408 61.0197C54.1712 61.0197 66.761 49.0022 66.761 34.1777C66.761 19.3533 54.1712 7.33572 38.6408 7.33572C23.1105 7.33572 10.5206 19.3533 10.5206 34.1777C10.5206 49.0022 23.1105 61.0197 38.6408 61.0197Z" fill="#F98FED"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_4_20" x="0" y="0" width="76.4666" height="128.632" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_20"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_20" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>   
+                        </label>
+                    </div>
+                    
+                    <div class="MaleBtn">
+                        <input type="radio" id="MaleGender" name="GenderBtn" value="Male">
+                        <label for="MaleGender">
+                        <svg width="101" height="103" viewBox="0 0 101 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3401 102.702C48.197 102.702 61.8622 89.3436 61.8622 72.8655C61.8622 56.3874 48.197 43.0293 31.3401 43.0293C14.4832 43.0293 0.817924 56.3874 0.817924 72.8655C0.817924 89.3436 14.4832 102.702 31.3401 102.702ZM31.3401 96.5157C45.3072 96.5157 56.6298 85.8438 56.6298 72.6794C56.6298 59.5149 45.3072 48.843 31.3401 48.843C17.3729 48.843 6.05029 59.5149 6.05029 72.6794C6.05029 85.8438 17.3729 96.5157 31.3401 96.5157Z" fill="#6FA8DC"/>
+                            <path d="M100.812 4.76488C100.871 3.16053 99.618 1.81236 98.0137 1.75367L71.8693 0.797171C70.265 0.738475 68.9168 1.99147 68.8581 3.59582C68.7994 5.20017 70.0524 6.54833 71.6568 6.60702L94.8962 7.45725L94.0459 30.6967C93.9873 32.301 95.2403 33.6492 96.8446 33.7079C98.4489 33.7666 99.7971 32.5136 99.8558 30.9092L100.812 4.76488ZM50.4695 52.7164L99.8863 6.78784L95.9284 2.52936L46.5116 48.4579L50.4695 52.7164Z" fill="#6FA8DC"/>
+                        </svg>  
+                        </label>
+                    </div>
+                </div>
+                <!-- <button id="Male" class="MaleBtnContainer" onClick="MaleBtnClicked()">
+                    <svg width="101" height="103" viewBox="0 0 101 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3401 102.702C48.197 102.702 61.8622 89.3436 61.8622 72.8655C61.8622 56.3874 48.197 43.0293 31.3401 43.0293C14.4832 43.0293 0.817924 56.3874 0.817924 72.8655C0.817924 89.3436 14.4832 102.702 31.3401 102.702ZM31.3401 96.5157C45.3072 96.5157 56.6298 85.8438 56.6298 72.6794C56.6298 59.5149 45.3072 48.843 31.3401 48.843C17.3729 48.843 6.05029 59.5149 6.05029 72.6794C6.05029 85.8438 17.3729 96.5157 31.3401 96.5157Z" fill="#6FA8DC"/>
+                        <path d="M100.812 4.76488C100.871 3.16053 99.618 1.81236 98.0137 1.75367L71.8693 0.797171C70.265 0.738475 68.9168 1.99147 68.8581 3.59582C68.7994 5.20017 70.0524 6.54833 71.6568 6.60702L94.8962 7.45725L94.0459 30.6967C93.9873 32.301 95.2403 33.6492 96.8446 33.7079C98.4489 33.7666 99.7971 32.5136 99.8558 30.9092L100.812 4.76488ZM50.4695 52.7164L99.8863 6.78784L95.9284 2.52936L46.5116 48.4579L50.4695 52.7164Z" fill="#6FA8DC"/>
+                    </svg>                   
+                </button> -->
+            </div>
+            <button onclick="GetGender()">
+                Test Btn
+            </button>
+        </div>
+        <div class="">
+
+        </div>
+        <div>
+
+        </div>
+        <script src="main.js">
+        </script>
+    </body>
+    
+</body>
+</html>

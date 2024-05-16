@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+body{
+    width:100%;
+    position: relative;
+    background-color:#152238;
+}
+img{
+    max-width: 100%;
+}
+
+.Header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#1c2e4a ;
+    background: rgba(28, 46, 74, 0.85);
+    box-shadow: 0px 4px 4px rgba(23, 20, 20, 0.25);
+    min-height: 129px;
+
+}
+
+.HeaderTitle{
+    font-family: 'Poppins';
+    font-size:40px;
+    color:white;
+
+}
+.GenderSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    flex-direction: column;
+}
+  
+h1{
+    font-family: 'Poppins';
+    font-size: 33px;
+    color:white;
+    font-weight: 400;
+}
+.FemaleHeader, .MaleHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.FemaleBtn, .MaleBtn{
+    
+    background-color: #1B2C47;
+    width:183.39px;
+    height:176.06px;
+    display: flex;
+    border:none;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    margin-left:13px;
+
+}
+
+.FemaleBtn:hover, .MaleBtn:hover{
+    background-color: #294572;
+}
+
+
+
+
+.GenderHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.MaleHeader{
+    margin-left: 90px;
+}
+
+.Select-Gender{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.Select-Gender input[type="radio"]{
+    opacity:0;
+    width:0;
+
+}
+
+.FemaleGender{
+    margin-left:12px;
+    
+}
+
+.Select-Gender:checked{
+    background-color:#294572;
+}
+
+.Select-Gender input[type="radio"]:checked + label {
+    background-color:#294572;
+    width:183.39px;
+    height:176.06px;
+    display: flex;
+    border:none;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    
+}
