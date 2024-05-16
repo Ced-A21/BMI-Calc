@@ -2,6 +2,33 @@ document.addEventListener("DOMContentLoaded", function () {
   let Gender = "";
   let Height = 0;
   let Weight = 0;
+  let isMetric = false;
+  let isImperial = true;
+
+  document.querySelector(".Metric").addEventListener("click", function () {
+    // Toggle the "clicked" class on the Metric button
+    this.classList.toggle("clicked");
+    document.querySelector(".HeaderHeight").innerText = `Your height in Cm`;
+    document.querySelector(".HeaderWeight").innerText = `Your weight in Kg`;
+    isMetric = true;
+    isImperial = false;
+
+    // Remove the "clicked" class from the Imperial button
+    document.querySelector(".Imperial").classList.remove("clicked");
+  });
+
+  document.querySelector(".Imperial").addEventListener("click", function () {
+    // Toggle the "clicked" class on the Imperial button
+    this.classList.toggle("clicked");
+    document.querySelector(".HeaderHeight").innerText = `Your height in inches`;
+    document.querySelector(".HeaderWeight").innerText = `Your weight in lbs`;
+    isMetric = false;
+    isImperial = true;
+
+    // Remove the "clicked" class from the Metric button
+    document.querySelector(".Metric").classList.remove("clicked");
+  });
+
   function GetGender() {
     let choice = document.getElementsByName("GenderBtn");
 
@@ -37,10 +64,20 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     let bmi;
-    if (Gender === "Male") {
-      bmi = Weight / (Height / 100) ** 2;
-    } else if (Gender === "Female") {
-      bmi = (0.9 * Weight) / (Height / 100) ** 2;
+    if (isMetric) {
+      if (Gender === "Male") {
+        bmi = Weight / (Height / 100) ** 2;
+      } else if (Gender === "Female") {
+        bmi = (0.9 * Weight) / (Height / 100) ** 2;
+      }
+    } else if (isImperial) {
+      if (Gender === "Male") {
+        // BMI calculation for males in Imperial system (lbs, inches)
+        bmi = (Weight / Height ** 2) * 703;
+      } else if (Gender === "Female") {
+        // BMI calculation for females in Imperial system (lbs, inches)
+        bmi = (Weight / Height ** 2) * 703;
+      }
     }
     let CategoryLabel = document.querySelector(".BMIRange");
     let Category;
@@ -66,5 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".BMIResult").innerText = `BMI: ${bmi.toFixed(1)}`;
   }
 
-  document.querySelector("button").addEventListener("click", CalculateBMI);
+  document
+    .querySelector(".BMIResultBtn")
+    .addEventListener("click", CalculateBMI);
 });

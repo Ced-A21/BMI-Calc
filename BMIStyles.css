@@ -37,7 +37,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 17px;
+    margin-top: 5px;
     flex-direction: column;
 }
   
@@ -94,6 +94,7 @@ h1{
     flex-direction: row;
 
 }
+
 
 .Select-Gender input[type="radio"]{
     opacity:0;
@@ -216,4 +217,30 @@ input[type=number] {
     cursor: pointer;
     background-color: #5F5CE9;
     transition-duration: 1s;
+}
+
+.MeasureSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Metric, .Imperial{
+    width:180px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #1B2C47;
+    text-decoration: none;
+    border:none;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: white;
+    margin-top: 13px;
+}
+.Imperial{
+    margin-left: 13px;
+}
+
+.clicked{
+    background-color:#294572;
 }
