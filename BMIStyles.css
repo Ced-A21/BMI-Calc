@@ -64,16 +64,17 @@ h1{
     justify-content: center;
     border-radius: 10px;
     align-items: center;
-    margin-left:13px;
 
+}
+
+.MaleBtn{
+    margin-left: 13px;
 }
 
 .FemaleBtn:hover, .MaleBtn:hover{
     background-color: #294572;
+    cursor:pointer;
 }
-
-
-
 
 .GenderHeader{
     display: flex;
@@ -100,10 +101,6 @@ h1{
 
 }
 
-.FemaleGender{
-    margin-left:12px;
-    
-}
 
 .Select-Gender:checked{
     background-color:#294572;
@@ -120,3 +117,60 @@ h1{
     align-items: center;
     
 }
+
+.BMISection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.HeightSection, .WeightSection{
+    width:381px;
+    height: 150px;
+    background-color: #1B2C47;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 29px;
+    flex-direction: column;
+}
+h2{
+    font-family: 'Poppins';
+    margin-top:10px;
+    color:white;
+    font-weight: 300;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+
+
+#HeightBMI, #WeightBMI{
+    width:350px;
+    text-align: center;
+    height:50px;
+    font-size: 40px;
+    color:white;
+    outline: none;
+    border-color: inherit;
+    background-color: #1B2C47;
+    border:none;
+}
+::placeholder{
+    color:white;
+    opacity:1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
