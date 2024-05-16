@@ -71,7 +71,7 @@ h1{
     margin-left: 13px;
 }
 
-.FemaleBtn:hover, .MaleBtn:hover{
+.FemaleBtn:hover, .MaleBtn:hover, .FemaleBtn label:hover, .MaleBtn label:hover{
     background-color: #294572;
     cursor:pointer;
 }
@@ -97,7 +97,7 @@ h1{
 
 .Select-Gender input[type="radio"]{
     opacity:0;
-    width:0;
+    width: 0;
 
 }
 
@@ -134,8 +134,13 @@ h1{
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    margin-top: 29px;
     flex-direction: column;
+}
+.HeightSection{
+    margin-top: 29px;
+}
+.WeightSection{
+    margin-top: 18px;
 }
 h2{
     font-family: 'Poppins';
@@ -173,4 +178,42 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
-  }
+}
+
+.ResultSection{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.BMIRange{
+    font-size:20px;
+    font-family: 'Poppins';
+}
+
+.BMIResult{
+    font-size:30px;
+    font-family: 'Poppins';
+    margin-top: 15px;
+    color:white;
+    margin-bottom: 10px;
+}
+.BMIResultBtn{
+    width: 379px;
+    height:81px;
+    background-color: #4240A8;
+    font-size: 40px;
+    font-family: 'Poppins';
+    color:white;
+    font-weight: 400;
+    border:none;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.BMIResultBtn:hover{
+    cursor: pointer;
+    background-color: #5F5CE9;
+    transition-duration: 1s;
+}

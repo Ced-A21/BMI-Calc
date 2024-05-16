@@ -68,29 +68,33 @@
                     </div>
                 </div>
             </div>
-            <!-- <button onclick="GetGender()">
-                Test Btn
-            </button> -->
         </div>
         <div class="BMISection">  
             <div class="HeightSection">
                 <h2>
                     Your height in Cm
                 </h2>
-                <input type="number" id="HeightBMI" name="HeightText" value="Height" placeholder="0">
+                <input type="number" id="HeightBMI" name="HeightBMI" placeholder="0">
+            
             </div>
             <div>
                 <div class="WeightSection">
                     <h2>
                         Your weight in Kg
                     </h2>
-                    <input type="number" id="WeightBMI" name="WeightText" value="Weight" placeholder="0">
+                    <input type="number" id="WeightBMI" name="WeightText" placeholder="0">
                 </div>
             </div>
-
         </div>
-        <div>
-
+        <div class="ResultSection">
+            <h1>
+                Your Result:
+            </h1>
+            <label class="BMIRange"></label>
+            <label class="BMIResult"></label>
+            <button class="BMIResultBtn" id="BMIResultBtn">
+                Calculate
+            </button>
         </div>
         <script src="main.js">
         </script>
